@@ -1,15 +1,18 @@
-import React from "react"
+import React from "react";
 import ReactDOM from "react-dom"
-import {BrowserRouter as Router} from "react-router-dom"
-
-import {ContextProvider} from "./Context"
 import App from "./App"
+import { BrowserRouter as Router } from "react-router-dom";
+import { ContextProvider } from "./Context";
+
+import "./styles.css"
+
+
 
 ReactDOM.render(
     <ContextProvider>
         <Router>
             <App />
         </Router>
-    </ContextProvider>, 
+    </ContextProvider>,
     document.getElementById("root")
 )
